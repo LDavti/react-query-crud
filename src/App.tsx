@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material';
 import { BlogContainer } from './containers/BlogContainer';
-import { theme as themeNew } from './themeNew';
+import { theme } from './theme';
 import { ContainerWrapper } from './components';
 
 const queryClientConfig = {
@@ -19,7 +19,7 @@ function App() {
   const queryClient = new QueryClient(queryClientConfig);
   return (
     <QueryClientProvider client={queryClient} contextSharing>
-      <ThemeProvider theme={themeNew}>
+      <ThemeProvider theme={theme}>
         <StyledEngineProvider injectFirst>
           <ContainerWrapper>
             <BlogContainer />
