@@ -2,6 +2,9 @@
 
 Simple Blog Project based on crud functionality with react-query.
 
+## Live
+https://blog-react-query.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
